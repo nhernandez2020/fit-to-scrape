@@ -1,0 +1,253 @@
+:root {
+    --red: #e60000;
+    --linear2: #e21919;
+    --linear3: #e13b3b;
+    --linear4: #e15757;
+    --linear5: #e18787;
+    --white: #fff;
+    --black: #00000096;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: var(--white);
+}
+
+body {
+    background-image: radial-gradient(#00629b, #1d73a5, #4f94bd, #7bb3d4, #9dc5db, #9bbccf);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+button {
+    outline: none;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(to left,
+            var(--red),
+            var(--linear2),
+            var(--linear3),
+            var(--linear4),
+            var(--linear5));
+    position: fixed;
+    bottom: 0;
+}
+
+nav {
+    height: 50px;
+    background-image: linear-gradient(to right,
+            var(--red),
+            var(--linear2),
+            var(--linear3),
+            var(--linear4),
+            var(--linear5));
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+nav.buttons {
+    height: 100%;
+}
+
+.buttons a {
+    /* ju */
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: #013355;
+    border: none;
+}
+
+div.jumbo {
+    width: 75%;
+    height: 200px;
+    position: relative;
+    top: 50%;
+    left: 12.5%;
+    background-image: url("../imgs/newspaper_background.jpg");
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+div.jumbo h1 {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: var(--black);
+}
+
+.container {
+    max-width: 860px;
+    margin: 20px auto 50px auto;
+    max-height: 400px;
+    overflow: scroll;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.article {
+    margin: 5px;
+    border-bottom: 2px solid var(--white);
+}
+
+.article h3 {
+    margin-top: 5px;
+}
+
+.article p {
+    margin: 5px 0;
+    color: var(--black);
+    cursor: default;
+}
+
+.article button {
+    padding: 5px;
+    margin: 10px 10px;
+    border-radius: 5px;
+    color: var(--white);
+    border: none;
+}
+
+.note {
+    background-color: #0019a7;
+    cursor: pointer;
+}
+
+.view-note {
+    cursor: pointer;
+    background-color: darkslateblue;
+}
+
+.save {
+    background-color: #008000;
+    cursor: pointer;
+}
+
+.delete {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.delete i {
+    font-size: 15px;
+    color: var(--red);
+}
+
+a {
+    text-decoration: none;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: var(--black);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.35s ease-in;
+}
+
+.modal-dialog {
+    position: relative;
+    max-width: 800px;
+    max-height: 80vh;
+    border-radius: 5px;
+    background: var(--white);
+    overflow: auto;
+    cursor: default;
+}
+
+.modal-dialog>* {
+    padding: 1rem;
+}
+
+.modal-header {
+    background: #efefef;
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal-header p {
+    color: var(--black);
+}
+
+.modal-header .close-modal {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.close-modal i {
+    color: var(--red);
+}
+
+.modal p+p {
+    margin-top: 1rem;
+}
+
+textarea {
+    color: #000;
+}
+
+#submit {
+    background-color: #0019a7;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.modal.is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.note-body {
+    color: var(--black);
+    margin: 5px 5px 5px 0;
+    display: inline;
+}
+
+.note-title {
+    color: var(--black);
+    border-bottom: 1px solid var(--black);
+}
+
+/* animations */
+
+[data-animation="slideInOutLeft"] .modal-dialog {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 0.5s cubic-bezier(0.51, 0.92, 0.24, 1.15);
+}
+
+[data-animation="slideInOutLeft"].is-visible .modal-dialog {
+    opacity: 1;
+    transform: none;
+    transition-delay: 0.2s;
+}

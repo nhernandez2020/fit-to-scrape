@@ -1,0 +1,5 @@
+# TernJS port file
+.tern-port
+
+# Package-lock.json
+package-lock.json
