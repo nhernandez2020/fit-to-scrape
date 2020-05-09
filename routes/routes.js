@@ -7,7 +7,7 @@ const cheerio = require("cheerio");
 const db = require("../models");
 
 router.get("/scrape", (req, res) => {
-    axios.get("https://www.wsj.com").then(function (response) {
+    axios.get("https://www.huffpost.com/news/").then(function (response) {
         let $ = cheerio.load(response.data);
 
         $("div.card").each(function (i, element) {
