@@ -1,9 +1,9 @@
 :root {
-    --red: #e60000;
-    --linear2: #e21919;
-    --linear3: #e13b3b;
-    --linear4: #e15757;
-    --linear5: #e18787;
+    --red: #191ce2;
+    --linear2: #191ce2;
+    --linear3: #191ce2;
+    --linear4: #191ce2;
+    --linear5: #191ce2;
     --white: #fff;
     --black: #00000096;
 }
@@ -17,7 +17,7 @@
 }
 
 body {
-    background-image: radial-gradient(#00629b, #1d73a5, #4f94bd, #7bb3d4, #9dc5db, #9bbccf);
+    background-image: radial-gradient(#00629b, #9dc9db);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -74,7 +74,7 @@ div.jumbo {
     position: relative;
     top: 50%;
     left: 12.5%;
-    background-image: url("../imgs/newspaper_background.jpg");
+    background-image: url(" public/css/images/mock-up-of-a-blank-daily-newspaper-with-empty-space-to-add-your-own-D33N84.jpg    ");
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
 }
