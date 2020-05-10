@@ -10,7 +10,7 @@ Handlebars
 Cheerios for scraping
 How to use application
 To run the application locally first clone this repository to your local machine then run npm install. Once dependencies have been installed insure that mongoDB is installed on your machine. Navigate to the root of the project then in the terminal run npm start and navigate to http://localhost:4000 in your browser.
-sample of this application click here
+sample of this application click here  https://nhernandez2020.github.io/fit-to-scrape/
 
 
 ![picture](public/images/Screen Shot 2020-05-09 at 1.52.04 PM.png)
