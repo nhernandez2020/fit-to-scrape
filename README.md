@@ -4,11 +4,13 @@ Fit-to-scrape Web scraping application gathers the title and links to articles f
 
 * Technologies Used
 * Node.js
-* item MongoDB
-* item Mongoose ORD
-* item Handlebars
-* item Cheerios
-* item How to use application
+* MongoDB
+* Mongoose ORD
+* Handlebars
+* Cheerios
+
+* How to use application
+
 To run the application locally first clone this repository to your local machine then run npm install. Once dependencies have been installed insure that mongoDB is installed on your machine. Navigate to the root of the project then in the terminal run npm start and navigate to http://localhost:4000 in your browser.
 sample of this application [click here](https://nhernandez2020.github.io/fit-to-scrape/)
 
