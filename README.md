@@ -7,7 +7,7 @@ Fit-to-scrape Web scraping application gathers the title and links to articles f
 * MongoDB
 * Mongoose ORD
 * Handlebars
-* Cheerios
+* Cheerios...
 
 * How to use application
 
