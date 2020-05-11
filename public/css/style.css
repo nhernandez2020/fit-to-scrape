@@ -74,7 +74,7 @@ div.jumbo {
     position: relative;
     top: 50%;
     left: 12.5%;
-    background-image: url("public/images/download.jpeg");
+    /* background-image: url("public/images/download.jpeg"); */
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
 }
